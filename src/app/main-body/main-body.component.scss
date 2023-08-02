@@ -1,0 +1,32 @@
+.card {
+        border: 2px solid #034EA1;
+        background-color: #00C0F3;
+        border: 1px solid #03afdf;
+        max-width: 350px;
+        max-height: 400px;
+        height: 350px;
+        width: 295px;
+        box-shadow: 1px 1px 1px 1px #039ec9;
+        position: none;
+        margin: 10px;
+    padding: 10px;
+}
+.card-Container{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.click-btn{
+    position: absolute;
+    font-size: medium;
+    color: #ffff;
+    font-weight: 500;
+    width: 120px;
+    height: 45px;
+    bottom: 8%;
+    left: 30%;
+    background-color: #74C043;
+    border: 0.5px solid #5c9a32;
+    box-shadow: 1px 1px 1px 1px #5c9a32;
+}

@@ -1,0 +1,36 @@
+
+
+      <div class="container">
+        <div class="sub-container">
+          <!-- start -->
+          <div class="container card-Container ">
+            <div *ngFor="let tile of tiles">
+            <div class="card-tile card">
+                <div class="card-Header">
+                    <div class="row">
+                        <div class="col-8">
+                        </div>
+                        <div class="col-4">{{tile.title}}</div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/img/form_images.png">
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-8">
+                        </div>
+                        <div class="col-4">
+                            <a routerLink="{{tile.path}}"><button class="btn click-btn">Click to see</button></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  end -->
+        </div>
+      </div>
+ 
+
+

@@ -1,0 +1,44 @@
+
+
+        
+          <mat-drawer-container class="example-container box-container" autosize>
+            <mat-drawer #drawer class="example-sidenav" mode="side">
+            <div class="sideNav"></div>
+                <div class="header-text-sidenav" *ngFor="let value of values">
+                    <div >{{value}}
+                    </div>
+                </div> 
+            </mat-drawer>
+        
+        
+        <div class="header">
+            <div class="sub-header">
+                <div class="row row-text">
+                        <div class="col-8 header-row">
+                            <div>
+                                <div type="button" mat-button (click)="drawer.toggle()" class="">
+                                    <img class="img-header" src="assets/img/whiteLineIcon.png"></div>
+                            </div>
+                            
+                            <div class=" header-text" *ngFor="let value of values">
+                                <div >{{value}}
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-4"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+      
+          
+            
+          
+          </mat-drawer-container>
+       
+        
+ 
