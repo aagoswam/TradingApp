@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
 
 @Component({
   selector: 'app-one-form',
@@ -9,9 +11,16 @@ import { FormControl } from '@angular/forms';
 })
 export class OneFormComponent {
   name = new FormControl('');
+  clicked = false;
+  title = 'CRUD APPLICATION'
+  addButtonTitle = 'ADD EMPLOYEE'
 
-  constructor(private fb: FormBuilder) {
+  constructor(private _dialog: MatDialog) {}
+
+    openAddEditEmpForm(){
+      this._dialog.open(EmpAddEditComponent )
+    }
   
-  }
+  
 
 }

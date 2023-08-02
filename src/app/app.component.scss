@@ -1,3 +1,9 @@
+
+@use '@angular/material' as mat;
+
+$my-palette: mat.$indigo-palette;
+$my-primary: mat.define-palette(mat.$indigo-palette, 500);
+
 body, html { 
     height: 100%; 
     width: 100%; 
