@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "RT",
+      "lastName": "Go",
+      "email": "ss@f.com",
+      "dob": "1999-10-02T04:00:00.000Z",
+      "gender": "female",
+      "education": "Intermediate",
+      "company": "google",
+      "experience": 12,
+      "package": 15,
+      "id": 2
+    },
+    {
+      "firstName": "aarti",
+      "lastName": "goswami",
+      "email": "goswamiaarti04@gmail.com",
+      "dob": "2016-01-03T05:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "ibm",
+      "experience": 34,
+      "package": 23,
+      "id": 3
+    }
+  ]
+}

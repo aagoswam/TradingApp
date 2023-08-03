@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-two-table',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./two-table.component.scss']
 })
 export class TwoTableComponent {
+  Application_Title = "Boston House Price Prediction";
+  empForm: FormGroup;
+  onFormSubmit(){
 
+  }
 }

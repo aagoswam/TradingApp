@@ -24,6 +24,11 @@ import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker'
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 
 @NgModule({
@@ -47,7 +52,14 @@ import {MatSelectModule} from '@angular/material/select';
     MatDatepickerModule,
     MatRadioModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

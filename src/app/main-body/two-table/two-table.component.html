@@ -1,1 +1,92 @@
-<p>two-table works!</p>
+<mat-toolbar color="basic">
+    <span>{{Application_Title}}</span>
+    <span class="example-spacer"></span>
+    
+  </mat-toolbar>
+
+  <div class="main-body">
+    <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>CRIM</mat-label>
+                <input matInput type="text" placeholder="CRIM" formControlName="CRIM">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>ZN</mat-label>
+                <input matInput placeholder="ZN" formControlName="ZN">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>INDUS</mat-label>
+                <input matInput type="text" placeholder="INDUS" formControlName="INDUS">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>CHAS</mat-label>
+                <input matInput placeholder="CHAS" formControlName="CHAS">
+            </mat-form-field>
+
+        </div>
+            
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>NOX</mat-label>
+                    <input matInput type="text" placeholder="NOX" formControlName="NOX">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>RM</mat-label>
+                    <input matInput placeholder="RM" formControlName="RM">
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>AGE</mat-label>
+                    <input matInput type="text" placeholder="AGE" formControlName="AGE">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>DIS</mat-label>
+                    <input matInput placeholder="DIS" formControlName="DIS">
+                </mat-form-field>
+            </div>
+           <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>RAD</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="firstName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>TAX</mat-label>
+                <input matInput placeholder="TAX" formControlName="TAX">
+            </mat-form-field>
+           </div>
+           <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>PTRATIO</mat-label>
+                <input matInput type="text" placeholder="PTRATIO" formControlName="PTRATIO">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>B</mat-label>
+                <input matInput placeholder="B" formControlName="B">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>LSTAT</mat-label>
+                <input matInput placeholder="LSTAT" formControlName="LSTAT">
+            </mat-form-field>
+        </div>
+    </form>
+  </div>
+
+  <div class="row">
+    <mat-form-field appearance="outline">
+        <mat-label></mat-label>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>PredictionResult</mat-label>
+       <!-- <p>{{PredictionResult}}</p> -->
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label></mat-label>
+    </mat-form-field>
+    
+    
+
+  </div>
